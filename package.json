@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-python-example",
+  "version": "1.0.0",
+  "description": "This is an example of a frontend communicating to a NodeJS Express server backend that itself communicates with a Python Flask server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Matthias Wolf",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  }
+}

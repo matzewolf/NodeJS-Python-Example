@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webcam demo</title>
+    <!--Link to CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Main JavaScript program-->
+    <script defer src="client.js"></script>
+  </head>
+  <body>
+    <div class="half"><!--Div for left half-->
+      <video id="video" autoplay muted></video><!--Hidden video element-->
+      <canvas id="webcam_canvas"></canvas><!--Canvas where webcam video is drawn-->
+    </div><div class="half"><!--Div for right half-->
+      <canvas id="response_canvas"></canvas><!--Canvas where response is drawn-->
+    </div>
+  </body>
+</html>

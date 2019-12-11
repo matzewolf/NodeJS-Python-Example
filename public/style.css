@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    /*overflow: hidden;*/  /*include if necessary*/
+}
+
+.half {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 50vw;
+    height: 100vh;
+}
+
+/* DOM elements video, webcam_canvas and boxes_canvas are exactly overlapping */
+#video, #webcam_canvas, #response_canvas {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%;
+    /* Prevent the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+    /* Center and horizontally flip the video */
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scaleX(-1);
+}
+
+/* Video hidden as its content is displayed on webcam_canvas only */
+#video {
+    visibility: hidden;
+}

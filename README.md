@@ -1,6 +1,6 @@
 # NodeJS + Python = :sparkles: 
 
-This is an experimental project that I built for another project, just to see how to utilize NodeJS together with Python to get the most out of both.
+An experimental web app that utilizes both NodeJS and Python to get the best of both worlds.
 
 ## Getting started
 
